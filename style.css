@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* carousel section */
+.carousel-indicators [data-bs-target]{
+    background-color: transparent!important;
+}
+
+/* Three image section */
+.three-image-div{
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    margin: 30px auto;
+    width: 100%;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    
+}
+.small-div{
+    margin: 10px 0px;
+    width: 300px;
+    text-align: center;
+    padding: 0px 20px;
+}
+.image-div{
+    width: 100%;
+    height: 200px;
+}
+
+.three-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* gallery section */
+.gallery-container{
+    width: 80%;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+@media screen and (max-width: 980px){
+    .gallery-container{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 551px){
+    .gallery-container{
+        width: 95%;
+    }
+    /* .card-container{
+        width: 100%!important;
+    } */
+}
+@media screen and (max-width: 601px){
+    .card-container{
+        width: 100%!important;
+    }
+}
+
+.gallery{
+    display: grid;
+    /* row-gap: 10px; */
+    /* column-gap: 10px; */
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px 200px;
+    
+}
+
+#box-1{
+    /* padding: 0px; */
+    grid-row: span 2;
+    grid-column: span 1;
+}
+#box-2{
+    grid-row: span 2;
+    grid-column: span 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    /* padding: 0px; */
+}
+#box-11{
+    grid-row: span 2;
+    grid-column: span 1;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    /* padding: 0px; */
+}
+#box-5{
+    grid-row: span 2;
+    grid-column: span 1;
+}
+#box-6{
+    /* padding: 0px; */
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* card section */
+.card-container{
+    width: 82%;
+    max-width: 1120px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-shadow{
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);;
+}
+
+.imp-text{
+    pointer-events: none; /** it ensure that we wont get that text pointer on text */
+}
+
+
+
+/* footer section */
+
+.link-div ul li a{
+    text-decoration: none;
+}
+.link-div ul li{
+    list-style: none;
+}
+/* .link-div .link-heading{
+    margin-left: 30px;
+} */
+
+.contact-div .contact-email{
+    margin: 5px 0px -5px;
+}
+.contact-div .contact-number{
+    margin: 0px;
+}
+
+
+.footer-container{
+    padding: 20px;
+    position: relative;
+    width: 80%;
+    max-width: 1100px;
+    margin: 0px auto;
+}
+.back-to-top-btn{
+    margin: 0px auto;
+    position: absolute;
+    right: 0px;
+
+}
+
+
+.card-one, .card-two, .card-three{
+    width: 100%;
+}
+
+
+.card-body .btn:hover, .back-to-top-btn:hover{
+    background-color: white!important;
+    color: #0d6efd!important;
+    border: 1px solid #0d6efd;
+    outline: none;
+}
